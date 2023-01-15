@@ -67,6 +67,5 @@ img {
   top: -100px;
 }
 .title {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
