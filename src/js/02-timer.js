@@ -10,7 +10,7 @@ const minutes = document.querySelector('span[data-minutes]');
 const hours = document.querySelector('span[data-hours]');
 const days = document.querySelector('span[data-days]');
 
-btnStart.disabled = true;
+btnStart.disabled = false;
 
 const options = {
   enableTime: true,
@@ -54,7 +54,7 @@ function addLeadingZero(value) {
 
 btnStart.addEventListener('click', () => {
   let timer = setInterval(() => {
-    let countdown = new Date(text.value) - new Date();
+    let countdown = new Date('March 12, 2023 10:00:00') - new Date();
     btnStart.disabled = true;
     if (countdown >= 0) {
       let timeObject = convertMs(countdown);
